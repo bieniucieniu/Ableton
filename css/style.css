@@ -17,6 +17,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: var(--sans);
+    font-weight: 600;
     background-color: white;
     color: black;
 }
@@ -43,6 +44,18 @@ a:hover {
     height: 3px;
 }
 
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    font-size: 18px;
+
+    max-width: 16000px;
+    margin: auto;
+    color: black;
+}
+
 #main-nav img {
     width: 40px;
     border-radius: 10px;
@@ -50,16 +63,6 @@ a:hover {
 }
 #main-nav img:hover {
     background-color: rgba(184, 184, 184, 0.3);
-}
-
-#main-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    font-size: 20px;
-    font-weight: 600;
-    color: black;
 }
 
 #main-nav ul {
@@ -74,6 +77,28 @@ a:hover {
 #main-nav li {
     padding: 3px;
     margin: 0;
+}
+
+.page-menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2rem;
+    padding: 2rem;
+    margin: auto;
+    max-width: 1500px;
+}
+
+.page-menu li:first-child a {
+    color: #fd584d;
+}
+.page-menu li:first-child a:hover {
+    color: rgb(255, 0, 0);
+}
+
+#page {
+    max-width: 1200px;
+    margin: auto;
 }
 
 #page .intro .intro-img {
