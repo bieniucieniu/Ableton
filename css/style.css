@@ -1,3 +1,8 @@
+:root {
+    --mono: "Oxygen Mono", monospace;
+    --sans: "Oxygen", sans-serif;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -6,4 +11,83 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--sans);
+    background-color: white;
+    color: black;
+}
+
+.blue {
+    color: #4126e8;
+}
+
+.blue:hover {
+    color: aqua;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+.line-gradient {
+    background: #fafafa;
+    height: 3px;
+}
+
+#main-nav img {
+    width: 40px;
+    border-radius: 10px;
+    padding: 5px;
+}
+#main-nav img:hover {
+    background-color: rgba(184, 184, 184, 0.3);
+}
+
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+#main-nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    gap: 30px;
+    margin: 1rem;
+}
+
+#main-nav li {
+    padding: 3px;
+    margin: 0;
+}
+
+#page .intro .intro-img {
+    display: flex;
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/pexels-christina-morillo-1181677.jpg");
+    background-size: cover;
+
+    font-size: 130px;
+    color: #fd584d;
+    font-weight: 700;
 }

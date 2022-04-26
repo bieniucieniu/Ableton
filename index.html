@@ -4,35 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght&family=Oxygen+Mono&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
     <title>Abelton</title>
   </head>
   <body>
-    <nav class="main-nav">
+    <nav id="main-nav">
       <ul class="navbar-main">
-        <li>Live</li>
-        <li>Push</li>
-        <li>Link</li>
-        <li>Shop</li>
-        <li>Packs</li>
-        <li>Help</li>
-        <li>More<i class="fa fa-plus"></i></li>
+        <li>
+          <a href="index.html"><img src="img/toilet-solid.svg" alt="logo" /></a>
+        </li>
+        <li><a href="#">Live</a></li>
+        <li><a href="#">Push</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Packs</a></li>
+        <li><a href="#">Help</a></li>
+        <li>
+          <a href="#">More<i class="fa fa-plus"></i></a>
+        </li>
       </ul>
 
       <ul class="navbar-side">
-        <li>Try for free</li>
-        <li>Account</li>
-        <li>Log Out</li>
+        <li><a class="blue" href="#">Try for free</a></li>
+        <li><a href="#">Account</a></li>
+        <li><a href="#">Log Out</a></li>
       </ul>
     </nav>
 
-    <nav class="page-nav">
-      <li>About</li>
-      <li>Jobs</li>
-    </nav>
+    <section class="line-gradient"></section>
+    <div id="page">
+      <nav class="page-menu">
+        <li>About</li>
+        <li>Jobs</li>
+      </nav>
+
+      <section class="intro">
+        <div class="intro-img">Ableton</div>
+      </section>
+    </div>
   </body>
 </html>
