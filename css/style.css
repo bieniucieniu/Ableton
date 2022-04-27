@@ -16,6 +16,7 @@ body {
     font-weight: 400;
     background-color: white;
     color: black;
+    overflow-x: hidden;
 }
 
 .blue {
@@ -46,8 +47,6 @@ a:hover {
     align-items: center;
     height: 60px;
     font-size: 18px;
-
-    max-width: 16000px;
     margin: auto;
     color: black;
 }
@@ -99,7 +98,7 @@ a:hover {
 
 #page .intro-img {
     display: flex;
-    width: 1200px;
+    max-width: 1200px;
     height: 600px;
     margin: auto;
     border-radius: 3px;
@@ -123,19 +122,18 @@ a:hover {
     font-weight: 700;
     font-size: 25px;
 }
-#page .photos {
+#page [class*="photos"] {
     display: flex;
     gap: 1rem;
     margin: auto;
     align-items: center;
     height: 900px;
-
     position: relative;
 }
-#page .photos img {
+#page [class*="photos"] img {
     object-fit: cover;
 }
-#page .photos .sqr1 {
+#page .photos-1 .sqr {
     width: 800px;
     height: 700px;
     background-color: rgb(250, 255, 169);
@@ -143,16 +141,39 @@ a:hover {
     left: 550px;
     top: 0;
 }
-
-#page .photos img:nth-child(2) {
+#page .photos-1 img:nth-child(2) {
     width: 600px;
     height: 500px;
     position: absolute;
 }
 
-#page .photos img:nth-child(3) {
+#page .photos-1 img:nth-child(3) {
     width: 500px;
     height: 300px;
     position: absolute;
-    right: 0;
+    left: 700px;
+}
+
+#page .photos-2 img:last-child {
+    height: 800px;
+    width: 600px;
+}
+#page .photos-2 .sqr img {
+    height: 300px;
+    width: 400px;
+}
+
+#page .photos-2 .sqr {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 150px 200px 150px 400px;
+    background-color: rgb(181, 255, 194);
+    right: 300px;
+}
+
+#page .photos-2 .sus {
+    position: relative;
+    left: -400px;
 }
